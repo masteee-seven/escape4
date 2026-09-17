@@ -297,7 +297,7 @@
       </div>
       <div class="gauge">
         <div class="label">MISS</div>
-        <div class="value mono" id="gaugeMiss">0/3</div>
+        <div class="value mono" id="gaugeMiss">0/2</div>
       </div>
       <button id="fullscreenBtn" title="全画面表示" style="background:var(--bg-panel-2); border:1px solid var(--metal); border-radius:10px; color:var(--text-light); width:40px; height:40px; font-size:16px; cursor:pointer; flex-shrink:0;">⛶</button>
     </div>
@@ -487,7 +487,7 @@ const GOOGLE_FORM_CONFIG = {
 };
 
 /* ---------------- 状態 ---------------- */
-const MAX_MISS = 3;
+const MAX_MISS = 2;
 let cumulativeElapsed = 0; // ゲームオーバー後のやり直しを含めた累積経過時間(秒)
 let state = {
   teamName:"",
@@ -557,7 +557,7 @@ function renderStart(){
         <p>原因は10個の「コンプライアンス違反の芽」<br>
         正しい判断を選んでシャッターを開けろ。<br>
         10個のコードを集めて、脱出せよ。<br>
-        <span style="color:var(--accent-red);">ただし、判断ミス3回でミッション失敗となる。</span></p>
+        <span style="color:var(--accent-red);">ただし、判断ミス2回でミッション失敗となる。</span></p>
       </div>
       <input class="team-input" id="teamInput" placeholder="チーム名・店舗名を入力(例: 豊中店Aチーム)" maxlength="30">
       <button class="primary" id="startBtn" disabled>ミッション開始 / シャッターが閉まる前に</button>
